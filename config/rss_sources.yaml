@@ -1,0 +1,162 @@
+ # AI 热点 RSS 订阅源配置
+ # weight: 关键词匹配时的权重系数
+ # category: 来源分类（paper / blog / media / community）
+ 
+ sources:
+   - name: "arXiv cs.AI"
+     url: "https://rss.arxiv.org/rss/cs.AI"
+     category: paper
+     weight: 1.2
+ 
+   - name: "arXiv cs.LG"
+     url: "https://rss.arxiv.org/rss/cs.LG"
+     category: paper
+     weight: 1.2
+ 
+   - name: "arXiv cs.CL"
+     url: "https://rss.arxiv.org/rss/cs.CL"
+     category: paper
+     weight: 1.1
+ 
+   - name: "OpenAI Blog"
+     url: "https://openai.com/blog/rss.xml"
+     category: blog
+     weight: 1.5
+ 
+   - name: "Google AI Blog"
+     url: "https://blog.research.google/feed/"
+     category: blog
+     weight: 1.3
+ 
+   - name: "Anthropic Blog"
+     url: "https://www.anthropic.com/rss.xml"
+     category: blog
+     weight: 1.5
+ 
+   - name: "Meta AI Blog"
+     url: "https://ai.meta.com/blog/rss.xml"
+     category: blog
+     weight: 1.3
+ 
+   - name: "DeepMind Blog"
+     url: "https://deepmind.google/blog/rss.xml"
+     category: blog
+     weight: 1.3
+ 
+   - name: "TechCrunch AI"
+     url: "https://techcrunch.com/category/artificial-intelligence/feed/"
+     category: media
+     weight: 1.0
+ 
+   - name: "MIT Tech Review AI"
+     url: "https://www.technologyreview.com/topic/artificial-intelligence/rss/"
+     category: media
+     weight: 1.0
+ 
+   - name: "VentureBeat AI"
+     url: "https://venturebeat.com/category/ai/feed/"
+     category: media
+     weight: 1.0
+ 
+   - name: "The Verge AI"
+     url: "https://www.theverge.com/ai-artificial-intelligence/rss.xml"
+     category: media
+     weight: 1.0
+ 
+   - name: "Hacker News - AI"
+     url: "https://hnrss.org/frontpage?q=AI+artificial+intelligence+machine+learning&count=30"
+     category: community
+     weight: 0.9
+ 
+   - name: "Reddit ML"
+     url: "https://www.reddit.com/r/MachineLearning/.rss"
+     category: community
+     weight: 0.8
+ 
+ # AI 关键词评分系统
+ keywords:
+   - term: "GPT-5"
+     score: 10
+   - term: "GPT-4"
+     score: 8
+   - term: "o3"
+     score: 9
+   - term: "o4"
+     score: 10
+   - term: "Claude"
+     score: 8
+   - term: "Gemini"
+     score: 7
+   - term: "LLaMA"
+     score: 6
+   - term: "DeepSeek"
+     score: 8
+   - term: "Transformer"
+     score: 6
+   - term: "Diffusion"
+     score: 7
+   - term: "Large Language Model"
+     score: 6
+   - term: "Foundation Model"
+     score: 7
+   - term: "Agentic"
+     score: 8
+   - term: "AI Agent"
+     score: 8
+   - term: "RAG"
+     score: 6
+   - term: "Multi-modal"
+     score: 7
+   - term: "multimodal"
+     score: 7
+   - term: "Reinforcement Learning"
+     score: 6
+   - term: "RLHF"
+     score: 6
+   - term: "fine-tuning"
+     score: 5
+   - term: "alignment"
+     score: 6
+   - term: "safety"
+     score: 5
+   - term: "open source"
+     score: 5
+   - term: "open-source"
+     score: 5
+   - term: "AGI"
+     score: 8
+   - term: "reasoning"
+     score: 7
+   - term: "chain-of-thought"
+     score: 7
+   - term: "retrieval"
+     score: 5
+   - term: "embedding"
+     score: 5
+   - term: "training"
+     score: 4
+   - term: "inference"
+     score: 5
+   - term: "GPU"
+     score: 4
+   - term: "AI regulation"
+     score: 5
+   - term: "benchmark"
+     score: 5
+ 
+ # 跳过关键词（含这些词的标题直接过滤）
+ skip_keywords:
+   - "job posting"
+   - "hiring"
+   - "sponsored"
+   - "advertisement"
+   - "webinar"
+ 
+ # 每天最多发布的文章数
+ max_posts_per_run: 2
+ 
+ # 文章新鲜度窗口（小时）
+ freshness_hours: 48
+ 
+ # 历史记录保留天数
+ history_retention_days: 30
